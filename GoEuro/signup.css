@@ -1,0 +1,64 @@
+﻿.signform{
+    margin: 40px 0px;
+	text-align: center;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+.jumbotron{
+	margin: 50px auto;
+	position: relative;
+}
+.signform input{
+	line-height: 1.5;
+	font-size: 1.4em;
+	padding: 5px 10px;
+	color: #fff;
+	width: 60%;
+	background-color: rgba(0,0,0,0.7);
+}
+.signform input:focus{
+		outline: 8px solid orange;
+}
+.signtxt{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 30px auto;
+}
+.signbtn{
+	text-align: center;
+	margin: 20px auto;
+	font-size: 24px;
+	font-weight: bold;
+
+}
+.signbtn button{
+	background-color: orange;
+	border: 2px solid transparent;
+	color: #000;
+	font-family: 'lato',serif;
+	font-size: 30px;
+	font-weight: bold;
+	width: 400px;
+	height: 60px;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+	text-align: center;
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+   text-align: center;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+   text-align: center;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #fff;
+   text-align: center;
+}
+.remember{
+	font-family: 'lato',serif;
+	font-size: 16px;
+}

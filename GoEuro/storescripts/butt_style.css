@@ -1,0 +1,314 @@
+#button {
+  position: absolute;
+  height: 48px;
+ background-color: brown;
+  width:2;
+  
+}
+#button ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  position:absolute;
+  font-size:17px;
+  top:0px;
+  left:0px;
+}
+#button > ul {
+  position: absolute;
+  display: block;
+  background: hsla(34,85%,45%,1);
+  width: 100%;
+  z-index: 500;
+  left:250px;
+}
+#button:after,
+#button > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/*#button.align-right > ul > li {
+  float: right;
+}
+#button.align-center ul {
+  text-align: left;
+}
+#button.align-center ul ul {
+  text-align: left;
+}*/
+#button > ul > li {
+  display: inline-block;
+  position: absolute;
+  margin: 0;
+  padding: 10;
+  text-align:center;
+}
+#button > ul > #menu-button {
+  display: none;
+}
+#button ul li input[type="button"] {
+  display: block;
+  font-family: Helvetica, sans-serif;
+  font-size:17px;
+  text-decoration: none;
+  color:white;
+   text-align:center;
+}
+#button > ul > li > input[type="button"] {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 15px 20px;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: color 0.25s ease-out;
+  -moz-transition: color 0.25s ease-out;
+  -ms-transition: color 0.25s ease-out;
+  -o-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+}
+#button > ul > li.has-sub > a {
+  padding-right: 32px;
+}
+#button > ul > li:hover > a {
+  color: orange;
+}
+#button li.has-sub::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+#button > ul > li.has-sub::after {
+  right: 10px;
+  top: 20px;
+  border: 5px solid transparent;
+  border-top-color: #7a8189;
+}
+#button > ul > li:hover::after {
+  border-top-color: #ffffff;
+}
+
+#button > ul > li:hover > ul {
+  left: auto;
+  top: 44px;
+  opacity: 1;
+}
+#button.align-right > ul > li:hover > ul {
+  left: auto;
+  right: 0;
+  opacity: 1;
+}
+#button ul ul li:hover > ul {
+  left: 170px;
+  top: 0;
+  opacity: 1;
+}
+/*#button.align-right ul ul li:hover > ul {
+  left: auto;
+  right: 170px;
+  top: 0;
+  opacity: 1;
+  padding-right: 5px;
+}*/
+#button ul ul li a {
+  width: 130px;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 20px;
+  font-size: 17px;									/*cake gallery and flavoured cakes*/
+  color: brown;
+  position:relative;
+  top:0px;
+  left:0px;
+  background: #ffffff;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -ms-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+}
+/*#button.align-right ul ul li a {
+  text-align: right;
+}*/
+#button ul ul li:hover > a {
+  background: #f2f2f2;
+  color: #8c9195;
+}
+#button ul ul li:last-child > a,
+#button ul ul li.last > a {
+  border-bottom: 0;
+}
+#button > ul > li > ul::after {
+  content: '';
+  border: 6px solid transparent;
+  width: 0;
+  height: 0;
+  border-bottom-color: #ffffff;
+  position: absolute;
+  top: -12px;
+  left: 30px;
+}
+#button.align-right > ul > li > ul::after {
+  left: auto;
+  right: 30px;
+}
+#button ul ul li.has-sub::after {
+  border: 4px solid transparent;
+  border-left-color: #9ea2a5;
+  right: 10px;
+  top: 12px;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease, right 0.2s ease;
+}
+#button.align-right ul ul li.has-sub::after {
+  border-left-color: transparent;
+  border-right-color: #9ea2a5;
+  right: auto;
+  left: 10px;
+}
+#button ul ul li.has-sub:hover::after {
+  border-left-color: #ffffff;
+  right: -5px;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+#button.align-right ul ul li.has-sub:hover::after {
+  border-right-color: #ffffff;
+  border-left-color: transparent;
+  left: -5px;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  #button {
+    width: auto;
+  }
+  #button.align-center ul {
+    text-align: left;
+  }
+  #button.align-right > ul > li {
+    float: none;
+  }
+  #button ul {
+    width: auto;
+  }
+  #button .submenuArrow,
+  #button #indicatorContainer {
+    display: none;
+  }
+  #button > ul {
+    height: auto;
+    display: block;
+  }
+  #button > ul > li {
+    float: none;
+  }
+  #button li,
+  #button > ul > li {
+    display: none;
+  }
+ /* #button ul ul,
+  #button ul ul ul,
+  #button ul > li:hover > ul,
+  #button ul ul > li:hover > ul,
+  #button.align-right ul ul,
+  #button.align-right ul ul ul,
+  #button.align-right ul > li:hover > ul,
+  #button.align-right ul ul > li:hover > ul {
+    position: relative;
+    left: auto;
+    top: auto;
+    opacity: 1;
+    padding-left: 0;
+    padding-right: 0;
+    right: auto;
+  }*/
+  #button ul .has-sub::after {
+    display: none;
+  }
+  #button ul li a {
+    padding: 12px 20px;
+  }
+  #button ul ul li a {
+    border: 0;
+    background: none;
+    width: auto;
+    padding: 8px 35px;
+  }
+  #button.align-right ul ul li a {
+    text-align: center;
+  }
+  #button ul ul li:hover > a {
+    background: none;
+    color: pink;
+  }
+  #button ul ul ul a {
+    padding: 8px 50px;
+  }
+  #button ul ul ul ul a {
+    padding: 8px 65px;
+  }
+  #button ul ul ul ul ul a {
+    padding: 8px 80px;
+  }
+  #button ul ul ul ul ul ul a {
+    padding: 8px 95px;
+  }
+  #button > ul > #menu-button {
+    display: block;
+    cursor: pointer;
+  }
+  #button #menu-button > a {
+    padding: 14px 20px;
+  }
+  #button ul.open li,
+  #button > ul.open > li {
+    display: block;
+  }
+  #button > ul.open > li#menu-button > a {
+    color: #fff;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.1);
+  }
+  #button ul ul::after {
+    display: none;
+  }
+/*  #button #menu-button::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #7a8189;
+    border-bottom: 2px solid #7a8189;
+    right: 20px;
+    top: 15px;
+  }
+/*  #button #menu-button::before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #7a8189;
+    right: 60px;
+    top: 55px;
+  }
+  #button ul.open #menu-button::after,
+  #button ul.open #menu-button::before {
+    border-color: #fff;
+  }*/
+

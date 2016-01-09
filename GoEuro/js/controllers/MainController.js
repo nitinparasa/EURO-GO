@@ -56,7 +56,7 @@
       {
           name: 'Manchester Museum',
           city: 'Manchester',
-          price: '+',
+          price: '*',
           categ: 'Museum',
           cover: 'images/manchester_museum.jpg',
       },

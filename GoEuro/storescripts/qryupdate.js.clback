@@ -1,0 +1,16 @@
+$('input#submit').on('click',function(){
+	var p = new Array();
+	$('input[name='buckets[]']:checked').each(function(){
+		
+			p.push($(this).val());
+			
+	});
+	$.ajax( {
+			url: "process.php",
+			type: "POST",
+			data: {flav:p},
+			success: function(res){
+				alert(res);
+			}
+	})
+});

@@ -1,10 +1,26 @@
-﻿tml, body {
+﻿html, body {
  margin: 0;
  padding: 0;
  font-family: 'Lato', sans-serif;
  width:100%;
 }
-
+.QViewHover {
+        display: inline;
+}
+.QViewHover .hover {
+    display: none;
+    position: absolute;
+    right: 55px;
+	top: 0px;
+	text-decoration: none;
+	background: grey;
+	color: white;
+	font: bold 18px tahoma ;
+	padding: 5px;
+	height: 25px;
+    z-index: 2;
+	border-radius: 18px;
+}
 .header {
  padding: 15px;
 }
@@ -115,18 +131,4 @@
  color: #F65A5B ;
    background: rgba(246, 90, 91, 0.25);
    transition: background 500ms;
-}
-
-.footer {
- text-align: center;
- margin: 80px 0 110px;
-}
-
-.footer h2 {
- font-size: 24px;
- margin-bottom: 25px;
-}
-
-.footer img {
-   margin: 0 10px;
 }
